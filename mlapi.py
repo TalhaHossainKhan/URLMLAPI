@@ -13,4 +13,4 @@ async def gatherPredict_data(URL: str):
     prediction_data = pd.DataFrame.sparse.from_spmatrix(vectorizer.transform([URL]), columns=vectorizer.get_feature_names_out())
     Predict = model.predict(prediction_data)
 
-    return {"Prediction: ": int(Predict)}
+    return {"Prediction": int(Predict)}
