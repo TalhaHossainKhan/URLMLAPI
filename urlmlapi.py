@@ -16,4 +16,4 @@ async def gatherPredict_data(URL: str):
     Predict = model.predict(prediction_data)
 
     #Return prediction
-    return {"Prediction: ": int(Predict)}
+    return {"Prediction": int(Predict[0])}
